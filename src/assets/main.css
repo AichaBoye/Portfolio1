@@ -1,0 +1,42 @@
+@import './base.css';
+
+#app {
+  max-width: 880px;
+  margin: 0 auto;
+  height: 500px;
+}
+
+a,
+.green {
+  text-decoration: none;
+  --vt-c-indigo: white;
+  transition: 0.4s;
+  height: 0px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+    position: fixed;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 1000;
+    margin: 0;
+    height: 100%;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 2rem;
+  }
+}
