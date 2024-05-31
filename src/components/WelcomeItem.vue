@@ -1,7 +1,7 @@
 <template>
   <div class="item">
     <i>
-      <slot name="icon"></slot>
+      <slot name="icon"> ccc</slot>
     </i>
     <div class="details">
       <h3>

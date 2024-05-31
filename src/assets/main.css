@@ -22,21 +22,15 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
-    position: fixed;
-    top: -200px;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 1000;
-    margin: 0;
-    height: 100%;
+    width: 1160px;
+    margin: 20px auto;
+    height: 2000px;
   }
 
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px 2rem;
+    position: fixed;
   }
 }
