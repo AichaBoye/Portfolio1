@@ -15,7 +15,7 @@ defineProps({
 h1 {
   font-weight: 450;
   font-size: 1.6rem;
-  position: relative;
+  position: fixed;
   top: 55px;
   left: 110px;
 }

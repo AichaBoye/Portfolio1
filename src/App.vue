@@ -1,49 +1,75 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
-
 </script>
 
 <template>
-  <div class="container">
   <header>
-    <a href="http://localhost:5174/"><img alt="Vue logo" class="logo" src="@/assets/imageCV.jpg" width="125" height="125" /></a>
-    
+    <!--photo de profil ici-->
+    <a href="http://localhost:5174/"
+      ><img
+        alt="Vue logo"
+        class="logo"
+        src="@/assets/imageCV.jpg"
+        width="125"
+        height="125"
+    /></a>
+
+    <!--bref présentation ici-->
     <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3 class="moi">
-      Hi je suis Marie Aissatou Boye <br>
-      Developpeuse Web Junior
-       <a href="https://vitejs.dev/" target="_blank" rel="noopener"></a> 
-      <a href="https://vuejs.org/" target="_blank" rel="noopener"></a>
-    </h3>
-  </div>
+      <h1 class="green">{{ msg }}</h1>
+      <h3 class="moi">
+        Hi je suis Marie Aissatou Boye <br />
+        Developpeuse Web Junior
+        <a href="https://vitejs.dev/" target="_blank" rel="noopener"></a>
+        <a href="https://vuejs.org/" target="_blank" rel="noopener"></a>
+      </h3>
+    </div>
     <div class="wrapper">
       <HelloWorld msg="Bienvenu sur mon site!" />
-      
 
+      <!--bar de navigation ici-->
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">A propos </RouterLink>
-        <RouterLink to="/project">Réalisation</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
+        <a href="#">Home</a>
+        <a href="#about">A propos</a>
+        <a href="#project">Réalisation</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
+  <main class="contenu">
 
+  </main>
+ 
   <footer>
+    <!--contenue du footer ici-->
     <div class="réseaux">
-                <a href="https://github.com/AichaBoye/Marie.html" class="fa fa-github"><img class="réseaux" src="@/assets/github.png" alt=""></a>
-                <a href="https://www.facebook.com/" class="fa fa-facebook"><img class="réseaux" src="@/assets/facebook.png" alt=""></a>
-                <a href="https://www.instagram.com/aichaeboye/" class="fa fa-instagram"><img class="réseaux" src="@/assets/instagram.png" alt=""></a>
-                  
-                <br>
-                    <p class="datetime = 2023-12-02"><small class="copyright">Dernier mise à jour le 02 Décembre2023</small></p>
-                  
-             </div>
-  </footer>
-</div>
+      <a
+        href="https://github.com/AichaBoye/Marie.html"
+        target="blank"
+        class="fa fa-github"
+        ><img class="réseaux" src="@/assets/github.png" alt=""
+      /></a>
+      <a href="https://www.facebook.com/" target="blank" class="fa fa-facebook"
+        ><img class="réseaux" src="@/assets/facebook.png" alt=""
+      /></a>
+      <a
+        href="https://www.instagram.com/aichaeboye/"
+        target="blank"
+        class="fa fa-instagram"
+        ><img class="réseaux" src="@/assets/instagram.png" alt=""
+      /></a>
 
+      <br />
+      <div>
+        <p>
+          <small class="copyright"
+            >Dernière mise à jour : {{ le22mai2024 }} le 22 mai 2024</small
+          >
+        </p>
+      </div>
+    </div>
+  </footer>
   <RouterView />
 </template>
 
@@ -85,24 +111,25 @@ nav a:first-of-type {
 
 @media (min-width: 1024px) {
   header {
-    display: inline-flex;
-    height: 290px;
-    width: 1200px;
-    bottom: 300px;
+    height: 670px;
+    width: 1160px;
     background-image: url(/src/assets/th.jpeg);
-    right: 8%;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: auto;
+    display: flex;
+    justify-content: center;
+    padding: 160px;
   }
 
   .logo {
-    margin: 10px 3rem auto;
     border-radius: 60px;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap-reverse;
+    width: 300px;
+    height: 290px;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    display: inline-flex;
   }
 
   nav {
@@ -126,9 +153,9 @@ nav a:first-of-type {
   position: relative;
   text-align: center;
   display: inline-flex;
-  right: 80px;
+  right: 60px;
   width: 140px;
-  margin: 65px;
+  margin-top: 40px;
 }
 .titre-1 {
   position: absolute;
@@ -150,29 +177,31 @@ nav a:first-of-type {
   top: 300px;
   left: 705px;
   text-align: center;
-
 }
 .background {
-  width: 800px;
+  width: 960px;
   background-image: url(/src/assets/th.jpeg);
   position: relative;
-  top: 60px;
-  right: 0px;
+  top: 620px;
+  left: 1125px;
 }
 .contact {
   display: inline-flex;
-  position: relative;
-  top: 125px;
+  position: fixed;
+  top: 0;
   color: black;
+  left: 700px;
+  padding: 320px;
+  margin-top: 470px;
 }
-.about{
+.about {
   color: black;
-    width: 434px;
-    top: -80px;
-    height: 330px;
-    position: fixed;
-    left: 460px;
-  }
+  width: 434px;
+  top: 250px;
+  height: 330px;
+  position: fixed;
+  left: 460px;
+}
 .hd {
   position: relative;
   bottom: 25px;
@@ -180,7 +209,7 @@ nav a:first-of-type {
   left: 10px;
   color: black;
 }
-.h4{
+.h4 {
   position: relative;
   bottom: 60px;
   color: white;
@@ -189,35 +218,49 @@ nav a:first-of-type {
   text-align: justify;
   left: 10px;
 }
-.réseaux{
+.réseaux {
   position: relative;
-  display: inline-flex;
   width: 46px;
-  top: -15px;
+  top: -10px;
   margin: 20px;
-  left: 440px;
+  left: 360px;
+  display: inline-flex;
 }
-footer{
+footer {
   background-image: url(/src/assets/th.jpeg);
-  width: 1200px;
+  width: 1160px;
   position: fixed;
-  height: 135px;
-  bottom: 0px;
-  right: 8%;
+  left: auto;
+  bottom: 0;
+  height: 270px;
 }
-.datetime{
+.copyright {
   color: white;
   position: absolute;
   width: 235px;
   top: 105px;
   left: 160px;
 }
-html{
+html {
   height: 4720px;
   width: 2000px;
+  overflow: hidden;
 }
-.moi{
-position: fixed;
-top: 115px;
+.moi {
+  position: fixed;
+  top: 130px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.element {
+  animation: fadeIn 1s;
 }
 </style>

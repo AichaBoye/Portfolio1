@@ -18,11 +18,11 @@
 @media (min-width: 1024px) {
   .about{
     color: black;
-    width: 434px;
-    top: -80px;
-    height: 330px;
-    position: fixed;
-    left: 460px;
+  width: 434px;
+  top: 250px;
+  height: 330px;
+  position: fixed;
+  left: 460px;
   }
 }
 </style>
