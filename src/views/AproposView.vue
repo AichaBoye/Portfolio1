@@ -3,11 +3,8 @@
     <div class="about">
     <h2>A Propos</h2>
     <p>
-          Je suis étudiante en 3e année de licence d'histoire,
-          suivant une autre formation de Developpement Web/eb 
-          Mobile. Au cours de Ma formation j'ai réalisé plusieurs 
-          project: création de site Web. Je vous invite à les découvrir 
-           au travers de ce portfolio.
+          Je suis étudiante en 3e année de licence d'histoire, suivant une autre formation de Developpement Web/eb Mobile. Au cours de Ma formation j'ai réalisé plusieurs 
+project: création de site Web. Je vous invite à les découvrir au travers de ce portfolio.
         </p>
   </div>
   
@@ -18,11 +15,12 @@
 @media (min-width: 1024px) {
   .about{
     color: black;
-  width: 434px;
-  top: 250px;
-  height: 330px;
-  position: fixed;
-  left: 460px;
+    width: 434px;
+    top: 290px;
+    height: 330px;
+    position: fixed;
+    left: 560px;
+    font-size: 2em
   }
 }
 </style>

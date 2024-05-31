@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+import contact from "./views/ContactView.vue"
 </script>
 
 <template>
@@ -30,7 +31,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
       <!--bar de navigation ici-->
       <nav>
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
         <a href="#about">A propos</a>
         <a href="#project">Réalisation</a>
         <a href="#contact">Contact</a>
@@ -85,10 +86,11 @@ header {
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: end;
-  margin-bottom: 100px;
+  text-align: left;
+    margin-left: 10rem;
+    font-size: 1rem;
+    top: 0px;
+    position: fixed;
 }
 
 nav a.router-link-exact-active {
@@ -133,11 +135,7 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
-    margin-left: 35rem;
-    font-size: 1rem;
-    top: 0px;
-    position: fixed;
+    
   }
 }
 .contenu {
@@ -248,7 +246,8 @@ html {
 }
 .moi {
   position: fixed;
-  top: 130px;
+  top: 210px;
+  left: 1830px;
 }
 
 @keyframes fadeIn {

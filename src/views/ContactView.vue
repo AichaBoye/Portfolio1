@@ -1,6 +1,5 @@
 <template>
   <main class="contenu">
-    <article>
       <div id="contact" class="contact">
         <div data-role="page-header">
           <h3 class="hd">Formulaire de contact</h3>
@@ -61,7 +60,6 @@
           </form>
         </div>
       </div>
-    </article>
   </main>
 </template>
 
