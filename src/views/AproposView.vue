@@ -1,26 +1,29 @@
 <template>
-  <main class="contenu">
-    <div class="about">
+    <div class="about" id="about">
     <h2>A Propos</h2>
     <p>
-          Je suis étudiante en 3e année de licence d'histoire, suivant une autre formation de Developpement Web/eb Mobile. Au cours de Ma formation j'ai réalisé plusieurs 
-project: création de site Web. Je vous invite à les découvrir au travers de ce portfolio.
+      Bienvenue dans mon portfolio en ligne, conçu avec le logiciel vue.js. 
+      Je suis très heureux de vous présenter mes travaux les plus récents 
+      dans le domaine du développement web. Je suis étudiante suivant une 
+      formation de Developpement Web/Web Mobile. Au cours de ma formation
+      j'ai réalisé plusieurs project(création de site Web). Je vous invite 
+      donc à les découvrir au travers de ce portfolio. N'hésitez pas à me 
+      contacter si vous avez des questions ou si vous souhaitez discuter 
+      d'un projet potentiel. Merci pour votre visite !
         </p>
   </div>
   
-  </main>
 </template>
 
 <style>
 @media (min-width: 1024px) {
   .about{
-    color: black;
-    width: 434px;
-    top: 290px;
-    height: 330px;
-    position: fixed;
-    left: 560px;
-    font-size: 2em
+    color: white;
+    width: 1190px;
+    height: 525px;
+    font-size: 2em;
+    background-color: black;
+    margin-left: -840px;
   }
 }
 </style>

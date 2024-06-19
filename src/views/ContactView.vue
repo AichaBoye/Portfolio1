@@ -1,15 +1,10 @@
 <template>
-  <main class="contenu">
       <div id="contact" class="contact">
         <div data-role="page-header">
           <h3 class="hd">Formulaire de contact</h3>
         </div>
         <div data-role="page-body">
-          <form
-            id="contact_form"
-            action="#"
-            method="POST"
-            enctype="multipart/form-data">
+          <form id="contact_form" action="mailto:EMAIL@marieaissatouboye@gmail.com" method="POST" enctype="multipart/form-data">
             <div class="row">
               <label class="required" for="name">Nom Prenom:</label><br />
               <input
@@ -60,26 +55,23 @@
           </form>
         </div>
       </div>
-  </main>
 </template>
 
+
 <style>
-@media (min-width: 1024px) {
-  .contact {
-    display: inline-flex;
-  position: fixed;
-  top: 0;
-  color: black;
-  left: 700px;
-  padding: 320px;
-  margin-top: 470px;
-  }
-  .background {
-    width: 960px;
-    background-image: url(/src/assets/th.jpeg);
+@media (min-width: 1024px){
+.contact{
+  background-color: black;
+    margin-bottom: 10px;
+    margin-left: -830px;
+    font-size: 30px;
+    width: 1200px;
+}
+.hd{
+
+  top: -90px;
     position: relative;
-    top: 620px;
-    left: 1125px;
-  }
+    background-color: black;
+}
 }
 </style>

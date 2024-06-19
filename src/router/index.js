@@ -9,29 +9,34 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (A propos.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/AproposView.vue')
+    // },
+    // {
+    //   path: '/project',
+    //   name: 'project',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (Réalisation.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/RealisationView.vue')
+    // },
+    // {
+    //   path: '/contact',
+    //   name: 'contact',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (Contact.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/ContactView.vue')
+    // }
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (A propos.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AproposView.vue')
-    },
-    {
-      path: '/project',
-      name: 'project',
-      // route level code-splitting
-      // this generates a separate chunk (Réalisation.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/RealisationView.vue')
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      // route level code-splitting
-      // this generates a separate chunk (Contact.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ContactView.vue')
+      path: "/:pathMatch(.*)*",
+      name: "not-found",
+      component: () => import('../views/NotFoundPage.vue')
     }
   ]
 })
