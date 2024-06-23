@@ -23,7 +23,11 @@
     height: 525px;
     font-size: 2em;
     background-color: black;
-    margin-left: -840px;
+    margin-left: -705px;
+    margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
   }
 }
 </style>

@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 import Header from "./components/Header.vue"
 import Footer from "./components/Footer.vue"
 import HomeView from "./views/HomeView.vue"
-import Modal from "./components/Modal.vue"
+import Modal from "./components/Modal.vue";
 </script>
 
 <template>
@@ -17,18 +17,17 @@ import Modal from "./components/Modal.vue"
   
 </template>
 
+<!--le style ici-->
 <style scoped>
 @media (min-width: 1024px) {
   header {
     height: 250px;
     width: 1200px;
     background-image: url(/src/assets/th.jpeg);
+    padding: 166px;
+    margin-top: -20px;
     display: flex;
     justify-content: center;
-    padding: 166px;
-    margin-left: -140px;
-    top: 0;
-    margin-top: -20px;
   }
 
 }

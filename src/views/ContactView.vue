@@ -55,6 +55,9 @@
           </form>
         </div>
       </div>
+      <dir>
+        <img src="@/assets/icon.jpeg" class="icon" id="icon">
+      </dir>
 </template>
 
 
@@ -62,10 +65,12 @@
 @media (min-width: 1024px){
 .contact{
   background-color: black;
-    margin-bottom: 10px;
-    margin-left: -830px;
+    margin-left: -695px;
     font-size: 30px;
     width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: -410px;
 }
 .hd{
 
@@ -73,5 +78,24 @@
     position: relative;
     background-color: black;
 }
+.icon {
+  width: 185px;
+    height: 100px;
+    display: flex;
+    margin-left: -610px;
+    margin-top: -105px;
+}
+
+@keyframes moveIcon {
+  0%   { transform: translateX(0px); }
+  50%  { transform: translateX(100px); }
+  100% { transform: translateX(0px); }
+}
+
 }
 </style>
+
+<script>
+
+
+</script>

@@ -13,7 +13,7 @@
 
         <!--projet numéro 3-->
         <p class="titre-3">Cahier des charges</p>
-        <a href="src/assets/Cahierdeschargeslasocketterie.pdf" target="blank"><img class="cap3" src="@/assets/Cahier.pdf" alt=""/></a>
+        <a href="src/assets/Cahier.pdf" target="blank"><img class="cap3" src="@/assets/Cahierdeschargeslasocketterie.pdf.png" alt=""/></a>
       </article>
       </div>
 </template>
@@ -21,10 +21,10 @@
 <style>
 @media (min-width: 1024px) {
  .project {
-    text-align: center;
-    width: 320px;
-    margin: -20px;
-    margin-top: 110px;
+  text-align: center;
+  width: 320px;
+  margin: -20px;
+  margin-top: 110px;
   }
   .cap1:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -42,54 +42,61 @@
 
     width: 360px;
     height: 500px;
-    margin-left: -810px;
+    margin-left: -678px;
+    margin-top: -19px;
+    display: flex;
     
   }
   .cap2{
     width: 360px;
     height: 500px;
-    margin-left: -400px;
-    margin-bottom: 50px;
-    margin-top: -550px;
+    margin-left: -280px;
+    margin-bottom: 56px;
+    margin-top: -525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .cap3{
 
-    width: 360px;
-    height: 500px;
-    margin-left: 10px;
-    margin-bottom: 165px;
-    margin-top: -580px;
+    text-align: center;
     position: relative;
+    bottom: 600px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .titre-1 {
-    display: flex;
-    margin-left: -710px;
+    margin-left: -670px;
     margin-bottom: 40px;
     background-color: black;
+    margin-top: -20px;
+    display: flex;
+    justify-content: normal;
   }
   .titre-2 {
     display: flex;
     position: relative;
-    bottom: 570px;
-    right: 340px;
+    bottom: 545px;
+    right: 275px;
   }
   .titre-3 {
-    display: flex;
-    text-align: center;
     position: relative;
-    bottom: 617px;
-    left: 125px;
+    bottom: 600px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
   }
   .h6 {
     position: relative;
     bottom: 35px;
     color: white;
-    margin: 0px;
-    display: flex;
-    text-align: justify;
-    right: 815px;
+    right: 675px;
     background-color: black;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 </style>

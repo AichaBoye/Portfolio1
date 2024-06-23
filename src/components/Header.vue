@@ -19,8 +19,6 @@
           <h3 class="moi">
           <br>
             Developpeuse Web Junior
-            <a href="https://vitejs.dev/" target="_blank" rel="noopener"></a>
-            <a href="https://vuejs.org/" target="_blank" rel="noopener"></a>
           </h3>
         </div>
         <div class="wrapper">
@@ -44,6 +42,8 @@
         </div>
       </header>
 </template>
+
+<!--le style du header ici-->
 <style>
 
 .logo {
@@ -105,7 +105,7 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: lightslategray;
 }
 
 nav a.active {

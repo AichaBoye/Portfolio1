@@ -1,4 +1,5 @@
 <template>
+    <!--le modal ici-->
   <button onclick="document.getElementById('myModal').style.display='block'" class="mamodal">
     Ouvrir Modal
   </button>
@@ -8,6 +9,7 @@
         class="close"
         onclick="document.getElementById('myModal').style.display='none'"
         >&times;</span>
+        <!--contenu de la modal ici-->
         <h2 style="color: black">Données de la création</h2>
         <p style="color: black">Date de création : 18/06/2024</p>
         <div class="technology" style="color: black">
@@ -37,6 +39,7 @@
   </div>
 </template>
 
+<!--le style de la modal ici-->
 <style>
     .logo1 {
         display: inline-block;
@@ -63,10 +66,10 @@
 
 }
 .mamodal{
-    width: 120px;
+  width: 120px;
   height: 50px;
   position: fixed;
-  margin-left: -125px;
+  display: flex;
 }
 .modal { display: none;
     position: fixed;
